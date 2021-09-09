@@ -1,0 +1,30 @@
+.navBar {
+    display: flex;
+    color: white;
+    overflow-x: scroll;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+/* For Chrome */
+.navBar::-webkit-scrollbar {
+    display: none;
+}
+
+.navBar {
+    -ms-overflow-style: none; /*IE and Edge*/
+    scrollbar-width: none; /* Firefox */
+}
+
+.navBar > h2 {
+    cursor: pointer;
+    margin: 0 30;
+    font-weight: 500;
+    transition: transform 50ms ease-out;
+    opacity: 0.7;
+}
+
+.navBar > h2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
